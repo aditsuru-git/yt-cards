@@ -1,0 +1,60 @@
+export const BANNER_THUMB_CARD = {
+	// Card dimensions
+	CARD_WIDTH: 1280,
+	CARD_HEIGHT: 180,
+
+	// Thumbnail
+	THUMBNAIL_WIDTH: 320,
+	THUMBNAIL_HEIGHT: 180,
+	THUMBNAIL_BORDER_RADIUS: 12,
+
+	// Spacing
+	CONTENT_LEFT_MARGIN: 335, // Space from left edge to content start
+	CONTENT_TOP_MARGIN: 0,
+	CONTENT_RIGHT_PADDING: 20,
+	LINE_HEIGHT: 20,
+	PFP_TO_TEXT_GAP: 8,
+
+	// Sizes
+	PFP_SIZE: 30,
+	VERIFICATION_BADGE_SIZE: 12,
+
+	// Time badge
+	TIME_BADGE_PADDING: 8,
+	TIME_BADGE_HEIGHT: 24,
+	TIME_BADGE_BOTTOM_OFFSET: 6,
+	TIME_BADGE_RIGHT_OFFSET: 8,
+	TIME_BADGE_BORDER_RADIUS: 4,
+
+	// Typography
+	TITLE_FONT_SIZE: 16,
+	TITLE_FONT_WEIGHT: "500",
+	TITLE_MAX_LENGTH: 80,
+
+	META_FONT_SIZE: 13,
+	META_FONT_WEIGHT: "400",
+
+	DESC_FONT_SIZE: 13,
+	DESC_FONT_WEIGHT: "400",
+	DESC_MAX_LENGTH: 120,
+
+	// Colors - Light theme
+	LIGHT: {
+		BG_COLOR: "#ffffff",
+		TITLE_COLOR: "#0f0f0f",
+		META_COLOR: "#606060",
+		DESC_COLOR: "#606060",
+		TIME_BADGE_BG: "rgba(0, 0, 0, 0.8)",
+		TIME_BADGE_TEXT: "#ffffff",
+	},
+
+	// Colors - Dark theme
+	DARK: {
+		BG_COLOR: "#0f0f0f",
+		TITLE_COLOR: "#f1f1f1",
+		META_COLOR: "#aaaaaa",
+		DESC_COLOR: "#aaaaaa",
+		TIME_BADGE_BG: "rgba(0, 0, 0, 0.8)",
+		TIME_BADGE_TEXT: "#ffffff",
+	},
+};

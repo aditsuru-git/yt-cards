@@ -5,3 +5,4 @@ export * from "@/utils/SVGTextUtil";
 export * from "@/utils/ApiError";
 export * from "@/utils/truncateText";
 export * from "@/utils/assetCache";
+export { generateTextSVG } from "@/utils/SVGTextUtil";

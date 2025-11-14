@@ -1,5 +1,6 @@
-import { TEXT_FONT_SIZE, TEXT_COLOR, TEXT_FONT_FAMILY, TEXT_FONT_WEIGHT } from "@/constants";
+import { THUMB_CARD } from "@/constants";
 
+const { TEXT_FONT_SIZE, TEXT_COLOR, TEXT_FONT_FAMILY, TEXT_FONT_WEIGHT } = THUMB_CARD;
 export function escapeXml(unsafe: string): string {
 	return unsafe.replace(/[<>&'"]/g, function (c) {
 		switch (c) {

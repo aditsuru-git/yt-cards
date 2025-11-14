@@ -1,5 +1,8 @@
 import sharp from "sharp";
-import {
+import { THUMB_CARD } from "@/constants";
+import { generateTextSVG, truncateText } from "@/utils";
+
+const {
 	CARD_WIDTH,
 	CARD_HEIGHT,
 	PFP_SIZE,
@@ -11,8 +14,7 @@ import {
 	TITLE_Y_OFFSET,
 	TEXT_FONT_SIZE,
 	MAX_TITLE_LENGTH,
-} from "@/constants";
-import { generateTextSVG, truncateText } from "@/utils";
+} = THUMB_CARD;
 
 export async function generateBigThumbCard(
 	title: string,
