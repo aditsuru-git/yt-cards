@@ -12,7 +12,7 @@ import {
 	TEXT_FONT_SIZE,
 	MAX_TITLE_LENGTH,
 } from "@/constants";
-import { generateTextSVG } from "@/utils";
+import { generateTextSVG, truncateText } from "@/utils";
 
 export async function generateBigThumbCard(
 	title: string,
@@ -35,9 +35,9 @@ export async function generateBigThumbCard(
 	);
 
 	const titleColor = titleTheme === "dark" ? "#242424" : "#ffffff";
-	const titleText = title.substring(0, MAX_TITLE_LENGTH);
+	const titleText = truncateText(title, MAX_TITLE_LENGTH);
 	const titleSvgBuffer = generateTextSVG({
-		width: CARD_WIDTH - PFP_SIZE - PFP_X_OFFSET - 200,
+		width: CARD_WIDTH - PFP_SIZE - PFP_X_OFFSET - 100,
 		height: 40,
 		text: titleText,
 		fontSize: TEXT_FONT_SIZE,

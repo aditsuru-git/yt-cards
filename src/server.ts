@@ -2,8 +2,11 @@ import express from "express";
 import config from "@/config";
 import { globalErrorHandler } from "@/utils";
 import { router } from "@/routes/router";
+import { initAssets } from "@/utils";
 
 const app = express();
+
+initAssets();
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
